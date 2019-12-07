@@ -1,11 +1,12 @@
 {
   "name": "my-vue-library",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-bundle": "vue-cli-service build --target lib --name myLib"
   },
   "dependencies": {
     "core-js": "^3.4.3",
@@ -37,5 +38,20 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "description": "## Project setup ``` npm install ```",
+  "main": "./dist/myLib.common.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctcruz/my-vue-package.git"
+  },
+  "keywords": [
+    "vue"
+  ],
+  "author": "Tarsis Cruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ctcruz/my-vue-package/issues"
+  },
+  "homepage": "https://github.com/ctcruz/my-vue-package#readme"
 }
